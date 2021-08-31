@@ -1,0 +1,10 @@
+h1, p{
+    margin-top: 10%;
+    text-align: center;
+}
+
+body{
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    height: 100vh;
+}
