@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 h1, p{
-    color: antiquewhite;
+    color: black;
     margin-top: 10%;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body{
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-    height: 100vh;
+    background-color: #f39f86;
+    background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+    height: 80vh;
 }
 
 a {
