@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-h1, h3, p{
+h1, h3, p, div{
     color: black;
     margin-top: 7%;
     text-align: center;
