@@ -38,4 +38,4 @@ if(fondo == "azul"){
     setInterval(colorAleatorio, 1000); 
 }
 
-p.innerHTML = `Seleccionaste el color ${fondo}`;
+p.innerHTML = `Seleccionaste el color de fondo ${fondo}`;
