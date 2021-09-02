@@ -17,6 +17,9 @@ if(fondo == "azul"){
 }else if(fondo == "verde"){
     document.body.style.backgroundImage = "url('img/backGreen.JPG')";
     document.body.style.backgroundColor = "#5aff15";    
+}else if(fondo == "rojo"){
+    document.body.style.backgroundImage = "url('img/backRed.JPG')";
+    document.body.style.backgroundColor = "#f53844";    
 }else if(fondo == "rosa"){
     document.body.style.backgroundImage = "url('img/backPink.JPG')";
     document.body.style.backgroundColor = "#c81f70";    
