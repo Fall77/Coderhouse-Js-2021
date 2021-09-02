@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-h1, p{
+h1{
     color: black;
     margin-top: 7%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    color: black;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
