@@ -1,4 +1,4 @@
-let fondo = prompt("Selecciona un color entre: azul; rojo; verde; rosa; violeta; amarillo.");
+let fondo = prompt("Selecciona un color entre: azul; rojo; verde; rosa; violeta; amarillo o aleatorio.");
 
 let p = document.querySelector('p');
 let div = document.querySelector('div');
@@ -29,8 +29,11 @@ if(fondo == "azul"){
 }else if(fondo == "amarillo"){
     document.body.style.backgroundImage = "url('img/backYellow.JPG')";
     document.body.style.backgroundColor = "#ffdd00";      
+}else if(fondo == "aleatorio"){
+    colorAleatorio();
+    setInterval(colorAleatorio, 1000);      
 }else{
-    div.innerHTML = `No se encontro el color ${fondo} <br> <br> Se generaran colores aleatorios mientras tanto <br> <br> F5 para recargar`
+    div.innerHTML = `No se encontro el color de fondo ${fondo} <br> <br> Se generaran colores aleatorios mientras tanto <br> <br> F5 para recargar`
     colorAleatorio();
     setInterval(colorAleatorio, 1000); 
 }
