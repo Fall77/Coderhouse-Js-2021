@@ -1,4 +1,4 @@
-let fondo = prompt("Selecciona un color entre: azul; verde; rosa; violeta; amarillo.");
+let fondo = prompt("Selecciona un color entre: azul; rojo; verde; rosa; violeta; amarillo.");
 
 let p = document.querySelector('p');
 let div = document.querySelector('div');
