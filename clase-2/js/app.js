@@ -39,3 +39,4 @@ if(fondo == "azul"){
 }
 
 p.innerHTML = `Seleccionaste el color de fondo ${fondo}`;
+
