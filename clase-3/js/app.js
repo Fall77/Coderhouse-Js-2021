@@ -14,6 +14,8 @@ h4.innerHTML = `Hola ${nombre}, tu edad es ${edad} años, y actualmente esta est
 
 let ingreso = prompt("Ingrese el numero de cubos que desea agregar (use bajo su propio riesgo)")
 
+let number = document.getElementById('number').innerHTML = `El numero ingresado <strong>{${ingreso}}</strong> indica la cantidad de elementos creados por el bucle <u><strong>For</strong></u>:`
+
 container = document.querySelector('#container')
 
 for(i=0; i<ingreso; i++){
