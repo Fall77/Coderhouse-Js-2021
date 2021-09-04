@@ -8,5 +8,6 @@ h1, h3, p, div{
 }
 
 body{
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    background-size: cover;
 }
