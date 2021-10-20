@@ -9,23 +9,45 @@
     <title>Clase-4</title>
 </head>
 <body>
-    <h1> 16845 - 04/09/2021 - Proyecto Integrador </h1>
+    <h1> 16845 - 04/09/2021 - Funciones Constructoras de objetos </h1>
     <u><h3>Clase 4</h3></u>
-
     <div class="contenedor-principal">
-        <div class="carrusel">
-          <img class="slides primer-slide" src="img/img_1.jpg">
-          <img class="slides" src="img/img_2.jpg">
-          <img class="slides" src="img/img_3.jpg">
-          <img class="slides" src="img/img_4.jpg">
-          <img class="slides" src="img/img_5.jpg">
-            
-          <button class="btn-prev">Prev</button>
-          <button class="btn-next">Next</button>
+      <label for="hero">Choose a hero</label>
+      <select name="hero" id="hero">
+        <option value="mage" selected>Mage</option>
+        <option value="archer">Archer</option>
+        <option value="warrior">Warrior</option>
+      </select>
+      <input id="create" type="submit" value="Create">
+      <input id="delete" type="submit" value="Delete">
+
+      <div class="animation-area">
+      <!--Aqui va la imagen del heroe-->
+        <div class="heroBox">
+          <p class="name0"></p>
         </div>
+      <!--Aqui va la animacion de ataque del mago, se encuentra con display: none hasta que se presiona el boton-->
+        <div class="attack1 hide">
+          <div class="firebox">
+            <img class="fireImg" src="img/Fireball.png">
+          </div>
+        </div>
+      <!--Aqui va la animacion de ataque del arquero-->
+        <div class="attack2 hide">
+          <div class="arrowBox">
+            <img class="arrowImg" src="img/arrow.png">
+          </div>
+        </div>
+      <!--Aqui va la animacion de ataque del guerrero-->
+        <div class="attack3 hide">
+          <div class="warriorBox">
+            <img class="swordImg" src="img/Sword.png">
+          </div>
+        </div>
+      <!--Boton para disparar la animacion-->
+        <button id="attack-button0" class="hide">Attack</button>
       </div>
-
-
+    </div>
     <script src="js/app.js"></script>
 </body>
 </html>
