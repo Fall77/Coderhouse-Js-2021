@@ -89,6 +89,7 @@ const frutas = [
 let inputVal = document.querySelector('#modalInput')
 let modal = document.getElementById('modal')
 let imgBox = document.querySelector('#imgBox')
+let fruitBox = document.querySelector('#imgBox')
 
 function getInputValue(){ 
     const valor = inputVal.value
@@ -98,9 +99,23 @@ function getInputValue(){
 }
 
 function getFruit(valor){
+    fruitBox.classList.remove('hide')
     const resultado = frutas.find( fruta => fruta.nombre === valor );
     console.log(resultado)
     showData(resultado)
+}
+function showAll(){
+    modal.classList.toggle('hide')
+    fruitBox.classList.remove('hide')
+    frutas.sort(function(a, b){return a.calorias - b.calorias});
+    frutas.forEach( (fruta)  => {
+        console.log(fruta)
+        imgBox.innerHTML += `
+    <h1>${fruta.nombre}</h1>
+    <p>Kcal: ${fruta.calorias}<p>
+    <img src="${fruta.image}" alt="${fruta.nombre}">
+    `
+    })
 }
 
 function showData(resultado){
@@ -108,13 +123,21 @@ function showData(resultado){
     <h1>${resultado.nombre}</h1>
     <p>Kcal: ${resultado.calorias}<p>
     <img src="${resultado.image}" alt="${resultado.nombre}">
-
-
     `
 }
+function borrarAll(){
+    while (imgBox.firstChild){
+        imgBox.removeChild(imgBox.firstChild);
+      };
+    inputVal.value = '';
+}   
 
 let btn = document.getElementById('openModal').addEventListener("click", function(){
     modal.classList.toggle('hide')
 })
 
 document.getElementById('sendBtn').addEventListener("click",getInputValue)
+
+document.getElementById('allBtn').addEventListener("click", showAll)
+
+document.getElementById('delBtn').addEventListener("click", borrarAll)
